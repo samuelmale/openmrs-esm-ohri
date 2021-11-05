@@ -16,20 +16,20 @@ const OHRIFormView: React.FC<{ state: any; closeWorkspace: any; encounterUuid?: 
     closeWorkspace();
   }, []);
   return (
-    // <OHRIForm
-    //   formJson={state.formJson}
-    //   onCancel={closeWorkspace}
-    //   onSubmit={onFormSubmit}
-    //   encounterUuid={encounterUuid}
-    //   mode={mode}
-    // />
-    <OHRIFormTemp
+    <OHRIForm
       formJson={state.formJson}
       onCancel={closeWorkspace}
       onSubmit={onFormSubmit}
       encounterUuid={encounterUuid}
       mode={mode}
     />
+    // <OHRIFormTemp
+    //   formJson={state.formJson}
+    //   onCancel={closeWorkspace}
+    //   onSubmit={onFormSubmit}
+    //   encounterUuid={encounterUuid}
+    //   mode={mode}
+    // />
   );
 };
 

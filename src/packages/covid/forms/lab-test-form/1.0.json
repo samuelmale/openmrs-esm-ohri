@@ -94,22 +94,6 @@
       "sections": [],
       "isSubform": "true",
       "subform": {
-        "name": "COVID Lab Order Form",
-        "package": "covid",
-        "behaviours": [
-          {
-            "intent": "*",
-            "subform_intent": "COVID_LAB_ORDER_EMBED",
-            "readonly": "true"
-          }
-        ]
-      }
-    },
-    {
-      "label": "",
-      "sections": [],
-      "isSubform": "true",
-      "subform": {
         "name": "COVID Lab Cancellation Form",
         "package": "covid",
         "behaviours": [

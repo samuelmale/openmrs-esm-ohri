@@ -1328,7 +1328,7 @@
       "sections": [],
       "isSubform": "true",
       "subform": {
-        "name": "covid_lab_order",
+        "name": "covid_lab_test",
         "package": "covid",
         "behaviours": [
           {
