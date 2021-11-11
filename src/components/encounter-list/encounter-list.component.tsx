@@ -167,14 +167,14 @@ const EncounterList: React.FC<EncounterListProps> = ({
               itemText={'View Case'}
               onClick={e => {
                 e.preventDefault();
-                //launchFormInViewMode(getForm('covid', 'covid_case'), encounter.uuid, forceComponentUpdate);
+                launchFormInViewMode(getForm('covid', 'covid_case'), encounter.uuid, forceComponentUpdate);
               }}
             />
             <OverflowMenuItem
               itemText={'Edit Case'}
               onClick={e => {
                 e.preventDefault();
-                launchFormInEditMode(encounterForm, encounter.uuid, forceComponentUpdate);
+                launchFormInEditMode(getForm('covid', 'covid_case'), encounter.uuid, forceComponentUpdate);
               }}
             />
             <OverflowMenuItem
