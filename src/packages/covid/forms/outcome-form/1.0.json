@@ -2,8 +2,20 @@
   "name": "COVID Outcome",
   "pages": [
     {
-      "label": "COVID Assessment",
-      "sections": []
+      "label": "",
+      "sections": [],
+      "isSubform": "true",
+      "subform": {
+        "name": "covid_assessment",
+        "package": "covid",
+        "behaviours": [
+          {
+            "intent": "*",
+            "subform_intent": "COVID_ASSESSMENT_EMBED",
+            "readonly": "true"
+          }
+        ]
+      }
     },
     {
       "label": "COVID Outcome",

@@ -98,7 +98,6 @@ const columns: EncounterListColumn[] = [
             onClick={e => {
               e.preventDefault();
               // editEncounter(encounter.uuid);
-              // launchFormInEditMode(encounterForm, encounterUuid, forceComponentUpdate);
             }}
           />
           <OverflowMenuItem

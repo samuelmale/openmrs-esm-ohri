@@ -159,6 +159,35 @@ const EncounterList: React.FC<EncounterListProps> = ({
         row[column.key] = val;
       });
 
+      //TODO: Find better place for this code
+      if (form.package == 'covid' && form.name == 'covid_assessment') {
+        row['actions'] = (
+          <OverflowMenu flipped className={styles.flippedOverflowMenu}>
+            <OverflowMenuItem
+              itemText={'View Case'}
+              onClick={e => {
+                e.preventDefault();
+                //launchFormInViewMode(getForm('covid', 'covid_case'), encounter.uuid, forceComponentUpdate);
+              }}
+            />
+            <OverflowMenuItem
+              itemText={'Edit Case'}
+              onClick={e => {
+                e.preventDefault();
+                launchFormInEditMode(encounterForm, encounter.uuid, forceComponentUpdate);
+              }}
+            />
+            <OverflowMenuItem
+              itemText={'Edit Outcome'}
+              onClick={e => {
+                e.preventDefault();
+                launchFormInEditMode(getForm('covid', 'covid_outcome'), encounter.uuid, forceComponentUpdate);
+              }}
+            />
+          </OverflowMenu>
+        );
+      }
+
       if (!row['actions']) {
         row['actions'] = (
           <OverflowMenu flipped className={styles.flippedOverflowMenu}>
