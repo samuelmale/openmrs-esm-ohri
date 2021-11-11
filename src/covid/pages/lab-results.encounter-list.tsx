@@ -101,7 +101,6 @@ const CovidLabResults: React.FC<CovidLabWidgetProps> = ({ patientUuid }) => {
       description={displayText}
       headerTitle={headerTitle}
       dropdownText="Add"
-      hideFormLauncher
     />
   );
 };

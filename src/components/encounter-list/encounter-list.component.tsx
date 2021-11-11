@@ -186,6 +186,25 @@ const EncounterList: React.FC<EncounterListProps> = ({
             />
           </OverflowMenu>
         );
+      } else if (form.package == 'covid' && form.name == 'covid_lab_test') {
+        row['actions'] = (
+          <OverflowMenu flipped className={styles.flippedOverflowMenu}>
+            <OverflowMenuItem
+              itemText={'View Lab Test'}
+              onClick={e => {
+                e.preventDefault();
+                launchFormInViewMode(encounterForm, encounter.uuid, forceComponentUpdate);
+              }}
+            />
+            <OverflowMenuItem
+              itemText={'Edit Lab Result'}
+              onClick={e => {
+                e.preventDefault();
+                launchFormInEditMode(getForm('covid', 'covid_lab_result'), encounter.uuid, forceComponentUpdate);
+              }}
+            />
+          </OverflowMenu>
+        );
       }
 
       if (!row['actions']) {
