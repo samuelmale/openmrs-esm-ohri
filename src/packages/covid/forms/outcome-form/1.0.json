@@ -5,6 +5,7 @@
       "label": "",
       "sections": [],
       "isSubform": "true",
+      "isHidden": "true",
       "subform": {
         "name": "covid_assessment",
         "package": "covid",

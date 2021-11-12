@@ -18,6 +18,7 @@ import OHRIFormPage from '../page/ohri-form-page';
 import { InstantEffect } from '../../utils/instant-effect';
 import { FormSubmissionHandler } from '../../ohri-form.component';
 import ReactMarkdown from 'react-markdown';
+import { isTrue } from '../../utils/boolean-utils';
 
 interface OHRIEncounterFormProps {
   formJson: OHRIFormSchema;
@@ -438,10 +439,10 @@ export const OHRIEncounterForm: React.FC<OHRIEncounterFormProps> = ({
       {form.markdown && <ReactMarkdown children={form.markdown.join('\n')} />}
 
       {form.pages.map((page, index) => {
-        if (page.isHidden) {
+        if (isTrue(page.isHidden)) {
           return null;
         }
-        if (page.isSubform && page.subform?.form) {
+        if (isTrue(page.isSubform) && page.subform?.form) {
           if (sessionMode != 'enter' && !page.subform?.form.encounter) {
             return null;
           }
