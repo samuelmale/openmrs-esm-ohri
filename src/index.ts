@@ -57,7 +57,6 @@ function setupOpenMRS() {
   // Load configurations
   provide(patientDashboardsConfig);
 
-  //Clear sidenav items to avoid duplicates
   clearCareAndTreatmentSidenavRegistry();
   clearCovidSidenavRegistry();
   clearHivPreventionSidenavRegistry();
