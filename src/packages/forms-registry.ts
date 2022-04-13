@@ -24,6 +24,7 @@ import contact_tracing_v_1_0 from './hiv/forms/care-and-treatment/contact-tracin
 import service_delivery_v_1_0 from './hiv/forms/care-and-treatment/service-delivery/1.0.json';
 import peads_disclosure_v_1_0 from './hiv/forms/care-and-treatment/Pead-Dislosure/1.0.json';
 import patner_notification_v_1_0 from './hiv/forms/care-and-treatment/patner-notification/1.0.json';
+import cacx_screening_treatment_v_1_0 from './cacx/forms/screening-cancer-treatment/1.0.json';
 
 export default {
   hiv: {
@@ -104,6 +105,11 @@ export default {
     },
     covid_case: {
       '1.0': covid_case_form_v_1_0,
+    },
+  },
+  cancer: {
+    screening_and_treatment: {
+      '1.0': cacx_screening_treatment_v_1_0,
     },
   },
 };
