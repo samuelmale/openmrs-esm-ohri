@@ -19,6 +19,7 @@ import {
   covidAssessments_dashboardMeta,
   covidLabResults_dashboardMeta,
   covidVaccinations_dashboardMeta,
+  createDashboardLink,
 } from './covid/dashboard.meta';
 
 import patientDashboardsConfig from './ohri-patient-dashboards-config.json';
@@ -202,17 +203,6 @@ function setupOpenMRS() {
         offline: true,
       },
       {
-        id: 'redirect-to-ohri-db-ext',
-        slot: 'homepage-widgets-slot',
-        load: getAsyncLifecycle(() => import('./components/redirect-dashboard/redirect-ohri-db.component'), {
-          featureName: 'redirect-to-ohri-db',
-          moduleName,
-        }),
-        meta: {
-          columnSpan: 4,
-        },
-      },
-      {
         id: 'home-dashboard-ext',
         slot: 'dashboard-links-slot',
         load: getSyncLifecycle(createOHRIDashboardLink(homeDashboardMeta), options),
@@ -323,41 +313,9 @@ function setupOpenMRS() {
         }),
       },
       {
-        id: 'covid-Assessments-dashboard',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCovidDashboardLink(covidAssessments_dashboardMeta), options),
-        meta: covidAssessments_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
-        id: 'covid-lab-results',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCovidDashboardLink(covidLabResults_dashboardMeta), options),
-        meta: covidLabResults_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
-        id: 'covid-vaccinations-dashboard',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCovidDashboardLink(covidVaccinations_dashboardMeta), options),
-        meta: covidVaccinations_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
-        id: 'hts-summary-dashboard',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createHIVPreventionDashboardLink(hts_dashboardMeta), options),
-        meta: hts_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
         id: 'cancer-summary-dashboard',
         slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createHIVPreventionDashboardLink(cervicalCancerMeta), options),
+        load: getSyncLifecycle(createDashboardLink(cervicalCancerMeta), options),
         meta: cervicalCancerMeta,
         online: true,
         offline: true,
@@ -370,36 +328,12 @@ function setupOpenMRS() {
         offline: true,
       },
       {
-        id: 'pre-exposure-prophylaxis',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createHIVPreventionDashboardLink(preExposureProphylaxis_dashboardMeta), options),
-        meta: preExposureProphylaxis_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
         id: 'pre-exposure-prophylaxis-ext',
         slot: 'pre-exposure-prophylaxis-dashboard-slot',
         load: getAsyncLifecycle(() => import('./pages/pre-exposure-prophylaxis/pre-exposure-prophylaxis.component'), {
           featureName: 'pre-exposure-prophylaxis',
           moduleName,
         }),
-      },
-      {
-        id: 'hts-service-summary-dashboard',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(serviceSummary_dashboardMeta), options),
-        meta: serviceSummary_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
-        id: 'program-management-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(programManagement_dashboardMeta), options),
-        meta: programManagement_dashboardMeta,
-        online: true,
-        offline: true,
       },
       {
         id: 'program-management-summary-ext',
@@ -410,28 +344,12 @@ function setupOpenMRS() {
         }),
       },
       {
-        id: 'visits-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(visits_dashboardMeta), options),
-        meta: visits_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
         id: 'visits-summary-ext',
         slot: 'visits-summary-slot',
         load: getAsyncLifecycle(() => import('./pages/visits/visits-summary.component'), {
           featureName: 'visits-summary',
           moduleName,
         }),
-      },
-      {
-        id: 'general-counselling-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(generalCounselling_dashboardMeta), options),
-        meta: generalCounselling_dashboardMeta,
-        online: true,
-        offline: true,
       },
       {
         id: 'general-counselling-summary-ext',
@@ -442,28 +360,12 @@ function setupOpenMRS() {
         }),
       },
       {
-        id: 'adherence-counselling-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(adherenceCounselling_dashboardMeta), options),
-        meta: adherenceCounselling_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
         id: 'adherence-counselling-summary-ext',
         slot: 'adherence-counselling-summary-slot',
         load: getAsyncLifecycle(() => import('./pages/adherence-counselling/adherence-counselling-summary.component'), {
           featureName: 'adherence-counselling-summary',
           moduleName,
         }),
-      },
-      {
-        id: 'partner-notification-services',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(partnerNotificationServices_dashboardMeta), options),
-        meta: partnerNotificationServices_dashboardMeta,
-        online: true,
-        offline: true,
       },
       {
         id: 'partner-notification-services-ext',
@@ -477,36 +379,12 @@ function setupOpenMRS() {
         ),
       },
       {
-        id: 'lab-results-summary-dashboard',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(labResults_dashboardMeta), options),
-        meta: labResults_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
-        id: 'medications-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(medications_dashboardMeta), options),
-        meta: medications_dashboardMeta,
-        online: true,
-        offline: true,
-      },
-      {
         id: 'medications-summary-ext',
         slot: 'medications-summary-slot',
         load: getAsyncLifecycle(() => import('./pages/medications/medications.component'), {
           featureName: 'medications-summary',
           moduleName,
         }),
-      },
-      {
-        id: 'appointments-summary',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createCareAndTreatmentDashboardLink(appointments_dashboardMeta), options),
-        meta: appointments_dashboardMeta,
-        online: true,
-        offline: true,
       },
       {
         id: 'appointments-summary-ext',
@@ -555,15 +433,6 @@ function setupOpenMRS() {
         load: getAsyncLifecycle(() => import('./links/form-render-app-menu-link.component'), options),
         online: true,
         offline: true,
-      },
-      {
-        id: 'clinical-views-divider',
-        slot: 'patient-chart-dashboard-slot',
-        load: getSyncLifecycle(createOHRIPatientChartSideNavLink(patientChartDivider_dashboardMeta), options),
-        meta: patientChartDivider_dashboardMeta,
-        online: true,
-        offline: true,
-        order: 100,
       },
       {
         id: 'multiple-encounters-ext',

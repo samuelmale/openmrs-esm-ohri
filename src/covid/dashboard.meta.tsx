@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SideNavMenu, SideNavMenuItem } from 'carbon-components-react';
-import { navigate } from '@openmrs/esm-framework';
+import { navigate, ConfigurableLink } from '@openmrs/esm-framework';
 import styles from './dashboard.scss';
 import Events from '../utils/events';
 
@@ -56,6 +56,19 @@ export const createCovidDashboardLink = db => {
             </SideNavMenuItem>
           ))}
         </SideNavMenu>
+      </div>
+    );
+  };
+  return DashboardLink;
+};
+
+export const createDashboardLink = (db: any) => {
+  const DashboardLink = ({ basePath }: { basePath: string }) => {
+    return (
+      <div key={db.name}>
+        <ConfigurableLink to={`${basePath}/${db.name}`} className="bx--side-nav__link">
+          {db.title}
+        </ConfigurableLink>
       </div>
     );
   };

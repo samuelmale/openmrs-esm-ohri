@@ -1,5 +1,6 @@
 {
   "name": "Screening & Cancer Treatment Register",
+  "encounterType": "580021f0-c913-4d88-8e10-4922e3270a59",
   "pages": [
     {
       "label": "Visit Details",
