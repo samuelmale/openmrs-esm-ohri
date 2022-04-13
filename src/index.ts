@@ -41,6 +41,7 @@ import {
   hts_dashboardMeta,
   preExposureProphylaxis_dashboardMeta,
 } from './hiv/hiv-prevention/dashboard.meta';
+import { cervicalCancerMeta } from './pages/cancer/cervical-cancer-dashboard.component';
 
 const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
 
@@ -350,6 +351,21 @@ function setupOpenMRS() {
         slot: 'patient-chart-dashboard-slot',
         load: getSyncLifecycle(createHIVPreventionDashboardLink(hts_dashboardMeta), options),
         meta: hts_dashboardMeta,
+        online: true,
+        offline: true,
+      },
+      {
+        id: 'cancer-summary-dashboard',
+        slot: 'patient-chart-dashboard-slot',
+        load: getSyncLifecycle(createHIVPreventionDashboardLink(cervicalCancerMeta), options),
+        meta: cervicalCancerMeta,
+        online: true,
+        offline: true,
+      },
+      {
+        id: 'cancer-sessions-ext',
+        slot: 'cervical-cancer-dashboard-slot',
+        load: getAsyncLifecycle(() => import('./pages/cancer/cervical-cancer-dashboard.component'), options),
         online: true,
         offline: true,
       },
