@@ -8,6 +8,16 @@ import {
   MultipleEncounterList,
   createOHRIDashboardLink,
 } from 'openmrs-esm-ohri-commons-lib';
+
+const OHRICommons = require('openmrs-esm-ohri-commons-lib');
+
+// import {
+//   createOHRIPatientChartSideNavLink,
+//   patientChartDivider_dashboardMeta,
+//   MultipleEncounterList,
+//   createOHRIDashboardLink,
+// } from '../../esm-commons-lib';
+
 import { homeDashboardMeta } from './dashboard.meta';
 
 const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
@@ -22,6 +32,12 @@ function setupOpenMRS() {
 
   defineConfigSchema(moduleName, {});
 
+  console.log({
+    createOHRIDashboardLink: OHRICommons.createOHRIDashboardLink,
+    createOHRIPatientChartSideNavLink: OHRICommons.createOHRIPatientChartSideNavLink,
+    patientChartDivider_dashboardMeta,
+    OHRICommons,
+  });
   // Load configurations
   provide(patientDashboardsConfig);
 

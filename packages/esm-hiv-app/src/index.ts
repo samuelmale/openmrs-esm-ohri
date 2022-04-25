@@ -30,6 +30,8 @@ import {
   hts_dashboardMeta,
   preExposureProphylaxis_dashboardMeta,
 } from './dashboard.meta';
+import { addToBaseFormsRegistry } from 'openmrs-ohri-form-engine-lib';
+import hivForms from './forms/forms-registry';
 
 const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
 
@@ -46,7 +48,7 @@ function setupOpenMRS() {
   //Clear sidenav items to avoid duplicates
   clearCareAndTreatmentSidenavRegistry();
   clearHivPreventionSidenavRegistry();
-
+  addToBaseFormsRegistry(hivForms);
   return {
     pages: [],
     extensions: [

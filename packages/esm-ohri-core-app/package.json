@@ -20,8 +20,12 @@
     "coverage": "npm test -- --coverage",
     "badges": "npm run coverage && jest-coverage-badges --output './badges' "
   },
-  "browserslist": ["extends browserslist-config-openmrs"],
-  "keywords": ["openmrs"],
+  "browserslist": [
+    "extends browserslist-config-openmrs"
+  ],
+  "keywords": [
+    "openmrs"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -59,14 +63,17 @@
   },
   "peerDependencies": {
     "@openmrs/esm-framework": "3.x",
-    "carbon-components": "^10.19.0",
     "@openmrs/esm-patient-common-lib": "3.x",
+    "carbon-components": "^10.19.0",
     "carbon-icons": "^7.0.7",
     "dayjs": "^1.8.16",
     "react": "^16.9.0",
-    "react-i18next": "^11.3.4"
+    "circular-dependency-plugin": "^5.2.2",
+    "react-i18next": "^11.3.4",
+    "openmrs-esm-ohri-commons-lib": "0.1.x"
   },
   "devDependencies": {
-    "@openmrs/esm-patient-common-lib": "^3.1.1-pre.1346"
+    "@openmrs/esm-patient-common-lib": "^3.1.1-pre.1346",
+    "openmrs-esm-ohri-commons-lib": "0.1.1"
   }
 }
