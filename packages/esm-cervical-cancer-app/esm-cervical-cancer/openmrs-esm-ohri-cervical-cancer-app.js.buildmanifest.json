@@ -1,0 +1,427 @@
+{
+  "chunks": [
+    {
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 291477,
+      "sizes": {
+        "javascript": 243751,
+        "share-init": 210,
+        "runtime": 47516
+      },
+      "names": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app"
+      ],
+      "files": [
+        "openmrs-esm-ohri-cervical-cancer-app.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "679d88b22c04ae3e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7139738,
+      "sizes": {
+        "javascript": 7091287,
+        "consume-shared": 210,
+        "share-init": 210,
+        "runtime": 48031
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "ed15a1111f04a31b",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 373,
+      "sizes": {
+        "javascript": 373
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "node_modules_babel_runtime_helpers_esm_objectWithoutPropertiesLoose_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "c6bbe3fbf9413112",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 442214,
+      "sizes": {
+        "javascript": 442214
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "node_modules_moment_locale_sync_recursive_-src_views_critical-kmrs-forms_critical-forms-landi-d12645.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "e82bddd1c078ba9a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 4386,
+      "sizes": {
+        "javascript": 4386
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "node_modules_openmrs_openmrs-form-engine-lib_src_components_section-collapsible-toggle_ohri-s-801b7f.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "e5507ceb17f6aac1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 85178,
+      "sizes": {
+        "javascript": 85136,
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app"
+      ],
+      "files": [
+        "src_index_ts-webpack_sharing_consume_default_dayjs_dayjs.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "d9740e6e21e498e3",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 459,
+      "sizes": {
+        "javascript": 459
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "translations_en_json.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "146ab9e625fc6fcb",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 837252,
+      "sizes": {
+        "javascript": 837252
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_carbon_icons-react_es_generated_bucket-11_js-node_modules_lodash_capital-756f8f.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "1e27892935cd03a7",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 11935,
+      "sizes": {
+        "javascript": 11935
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_dayjs_dayjs_min_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "aa7aaa6a9130ca21",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1091166,
+      "sizes": {
+        "javascript": 1091166
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_openmrs_esm-framework_src_internal_ts.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "3441f8f8f133404a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 103247,
+      "sizes": {
+        "javascript": 103247
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_openmrs_esm-patient-common-lib_src_nav-group_DashboardGroupExtension_tsx.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "2285c7703814df94",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 5194873,
+      "sizes": {
+        "javascript": 5194873
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_openmrs_node_modules_style-loader_dist_runtime_injectStylesIntoStyleTag_-973b8e.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "1df5515698e8bae3",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 1567569,
+      "sizes": {
+        "javascript": 1567569
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app"
+      ],
+      "files": [
+        "vendors-node_modules_openmrs_openmrs-form-engine-lib_src_components_encounter_ohri-encounter--0608a2.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "92f1c2d8865ad3c6",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 45220,
+      "sizes": {
+        "javascript": 45220
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_react-i18next_dist_es_index_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "195d07cf2abb3a50",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 114390,
+      "sizes": {
+        "javascript": 114390
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [
+        "vendors-node_modules_react_index_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "c2711ed2f78add35",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 126,
+      "sizes": {
+        "consume-shared": 126
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "7a7ae8d45db17211",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "8b806de27016d3bc",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-cervical-cancer-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "732035074ed1e94a",
+      "childrenByOrder": {}
+    }
+  ]
+}
