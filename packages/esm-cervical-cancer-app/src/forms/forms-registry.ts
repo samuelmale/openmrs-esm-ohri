@@ -34,7 +34,7 @@ export default {
       '1.0': hiv_discontinuation_v_1_0,
     },
     hiv_enrollment: {
-      '1.0': hiv_discontinuation_v_1_0,
+      '1.0': hiv_enrollment_v_1_0,
     },
     hiv_green_card: {
       '1.0': hiv_green_card_v_1_0,
